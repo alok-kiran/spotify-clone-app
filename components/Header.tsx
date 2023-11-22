@@ -23,7 +23,6 @@ const Header: React.FC<HeaderProps> = ({children, className}) => {
   const { onOpen, onClose } = useAuthModal();
   const supabaseClient = useSupabaseClient();
   const { user, subscription } = useUser();
-  console.log(['user', user])
 
   const handleLogout = async () => {
     //@ts-ignore
